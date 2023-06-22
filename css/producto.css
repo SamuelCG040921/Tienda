@@ -1,0 +1,43 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    color: snow;
+    font-size: 80px;
+}
+
+img{
+    width: 400px;
+    height: 400px;
+    float: left;
+    padding: 50px 50px;
+}
+
+.card{
+    box-shadow: 0px 0px 10px 5px  black;
+    width: 500px;
+    height: 500px;
+    float: left;
+    padding: 50px 50px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.precio{
+    color: green;
+    margin: 0 0 50px 50px;
+    display: inline-block;
+    width: 80%;
+}
