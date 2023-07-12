@@ -1,29 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda | Producto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/producto.css">
+    <script src="../js/carrito.js" async></script>
+    <title>Tienda|Productos</title>
 </head>
 <body>
-    <div class="wrapper">
-        <h1 class="titulo">Productos</h1>
-        <div class="container">
-            <div class="card"><img src="../images/aguacate.webp" alt="aguacate" class="card-images"></div>
-            <span class="precio">$20000</span>
-            <div class="card"><img src="../images/bananos.jpg.avif" alt="bananos" class="card-images"></div>
-            <span class="precio">$3000</span>
-            <div class="card"><img src="../images/cocacola.png" alt="cocacola" class="card-images"></div>
-            <span class="precio">$1000</span>
-            <div class="card"><img src="../images/frijoles.jpeg" alt="frijoles" class="card-images"></div>
-            <span class="precio">$5000</span>
-            <div class="card"><img src="../images/huevos.jpeg" alt="huevos" class="card-images"></div>
-            <span class="precio">$12000</span>
-            <div class="card"><img src="../images/manzanas.jpg.avif" alt="manzanas" class="card-images"></div>
-            <span class="precio">$1300</span>
+    <header>
+        <h1>Tienda</h1>
+    </header>
+    <section class="contenedor">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Aguacate</span>
+                <img src="../images/aguacate.webp" alt="" class="img-item">
+                <span class="precio-item">$1.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Bananos</span>
+                <img src="../images/bananos.jpg.avif" alt="" class="img-item">
+                <span class="precio-item">$1.200</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Coca cola</span>
+                <img src="../images/cocacola.png" alt="" class="img-item">
+                <span class="precio-item">$5.700</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Frijoles</span>
+                <img src="../images/frijoles.jpeg" alt="" class="img-item">
+                <span class="precio-item">$5.600</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Huevos</span>
+                <img src="../images/huevos.jpeg" alt="" class="img-item">
+                <span class="precio-item">$800</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Manzanas</span>
+                <img src="../images/manzanas.jpg.avif" alt="" class="img-item">
+                <span class="precio-item">$700</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
         </div>
-    </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
